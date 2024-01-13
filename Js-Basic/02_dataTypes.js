@@ -6,7 +6,7 @@
 
 
 let name = "Suren"; //String data type
-let age = 19;          // int data type
+let age = 19;          // number data type
 let isLoggedIn = false;  // Boolean data type
 
 
