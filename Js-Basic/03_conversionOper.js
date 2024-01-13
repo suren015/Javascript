@@ -34,3 +34,30 @@ let someNumber = 33
 let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof(stringNumber));
+
+
+/******************************* Operations ********************************/
+
+let value = 3;
+let negvalue = -value;
+console.log(negvalue);
+
+console.log(value+value);
+console.log(value-value);
+console.log(value*value);
+console.log(value/value);
+console.log(value%value);
+console.log(value**value);
+
+let str1 = "Surendra";
+let str2 = "Tholiya"
+
+console.log(str1+str2);
+
+console.log("1"+2);
+console.log(1+"2")
+
+console.log("1"+2+2)
+
+console.log(1+2+"2")
+
