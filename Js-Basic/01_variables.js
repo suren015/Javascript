@@ -11,7 +11,7 @@ accountPassword = "98705"
 accountCity = "Bengluru"
 
 
-console.log([accountId, accountEmail, accountPassword, accountCity, accountState]);
+console.log([accountId, accountEmail, accountPassword, accountCity, accountState ]);
 
 /* 
 Prefer not to use var beacause of issue in block scope and functional scope
