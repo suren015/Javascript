@@ -25,3 +25,15 @@ console.log(getname.substring(2, 5));   // print substring from start idx to end
 
 console.log(getname.indexOf('end'));  // return the position of first character of the substring
 
+let another = getname.slice(-4,6);    // For Negative values that is checking from the backside
+console.log(another);    
+
+const newStringOne = "      suren    ";
+console.log(newStringOne);              //print whole string with space
+console.log(newStringOne.trim());       //print whole string without space :: Remove white spaces
+
+
+const url = "https://suren.com/suren%20tholiya";
+
+console.log(url.replace('%20','-'));
+console.log(url.includes("suren"));
