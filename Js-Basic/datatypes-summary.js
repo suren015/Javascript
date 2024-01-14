@@ -63,6 +63,7 @@ Symbol	           "symbol"	                   Symbol
 // Stack in Primitive , Heapin Non-Primitive Datatype
 
 
+// Primitive datatype done by making copy :: 
 
 let myName = "Suren";
 
