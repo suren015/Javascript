@@ -80,3 +80,9 @@ console.log(user[1].email);
 
 console.log(Object.keys(tinderuser));      // Return their tinderuser type of each key 
 console.log(Object.values(tinderuser));      // Reutrn the values of all key mapped in tinderuser
+console.log(Object.entries(tinderuser));      // Return an array of key/ values
+
+
+// Check that property exist in object or not
+console.log(tinderuser.hasOwnProperty('isLoggedIn'));
+console.log(tinderuser.hasOwnProperty('contact'));
