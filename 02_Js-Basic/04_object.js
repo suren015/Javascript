@@ -86,3 +86,47 @@ console.log(Object.entries(tinderuser));      // Return an array of key/ values
 // Check that property exist in object or not
 console.log(tinderuser.hasOwnProperty('isLoggedIn'));
 console.log(tinderuser.hasOwnProperty('contact'));
+
+
+
+
+/********************************************************************/
+
+// DESTRUCTURING Of OBJECTS =>
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// course.courseInstructor
+
+// Syntax :: const{kya lena h} = kha se lena h
+const {courseInstructor} = course;
+console.log(courseInstructor);
+// Other way :: const {kya lena h: apne hisaab se naam rkhlo} = kha se lena h
+const {courseInstructor: it} = course
+console.log(it); 
+
+
+// API :: an API allows different software applications to communicate and share data with each other.
+
+// JSON is an API
+
+// In Js-> Both keys and values are in string form.
+
+// {
+//     "name": "Suren",
+//     "coursename": "JS in Hindi",
+//     "price": "free"
+ 
+// }
+
+// API's in array format ::>
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
