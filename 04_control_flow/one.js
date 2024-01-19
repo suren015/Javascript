@@ -24,3 +24,19 @@ if(score>50){
     console.log(`power is: ${power}`);
 }
 // console.log(`Outside power is: ${power}`);   // This line gives an error, if we use var instead of let then it execute as var is globally declared variable.
+
+
+const Username = true;
+const debitCard = true;
+const loggedinfromemail = true;
+const loggedinfromgoogle = false;
+
+// AND Operator
+if(isUserLoggedIn && debitCard){
+    console.log("Allow to buy course");
+}
+
+// OR Operator
+if(loggedinfromemail || loggedinfromgoogle){
+    console.log("User logged in");
+}
