@@ -43,7 +43,7 @@ console.log(val1);
 
 
 
-// Tr=erniary Operator::>
+// Terniary Operator::>
 // Condition?true:false;
 
 const icePrice = 100;
