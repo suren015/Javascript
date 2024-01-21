@@ -13,9 +13,46 @@
 </head>
 <body class="bg-black">
     <div >
-        <h1 id="title" class="heading">DOM learning on Chai aur Code</h1>
+        <h1 id="title" class="heading">DOM learning on Chai aur Code
+            <span style="display: none;">test text</span>
+        </h1>
+        <h1>My Name is Surendra</h2>
+        <h2>This is Javascript Course teach by Hitesh Choudhary</h3>
+        <h2>Chai Aur Code by Hiteh</h2>  
         <p>Lorem ipsum dolor sit amet.</p>
     </div>
 </body>
 </html>
 
+<!-- 
+    A) Selecting ::
+
+    (I) document.getElementById('title')   => return <h1 id="title" class="heading">DOM learning on Chai aur Code</h1>
+
+    document.getElementById('title').className   => return "heading"
+
+        Using By Id::
+        1) title.style.backgroundColor = 'green'
+        2) title.style.padding = "15px"
+        3) title.style.borderRadius = "10px"
+        
+        Get Content from Id's::>
+        1) title.innerContent       -> return "DOM learning on Chai aur Code test text"
+
+        2) title.innerText       -> Only visible part, that is return "DOM learning on Chai aur Code" 
+
+        3) title.innerHTML      -> Get all HTML value that is return "DOM learning on Chai aur Code <span style="display: none;">test text</span>" 
+
+    (II) document.getElementByClassName("heading")
+
+
+    // Query Selector ::>
+
+    a) document.querySelector('h2')  -> return first h2 i.e. <h2>This is Javascript Course teach by Hitesh Choudhary</h2>
+
+    b) document.querySelector('#title')   -> return <h1 id="title" class="heading">DOM learning on Chai aur Code <span style="display: none;">test text</span></h1>
+    
+    c) document.querySelector('.heading')
+
+
+ -->
