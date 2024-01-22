@@ -20,6 +20,13 @@
         <h2>This is Javascript Course teach by Hitesh Choudhary</h3>
         <h2>Chai Aur Code by Hiteh</h2>  
         <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
     </div>
 </body>
 </html>
@@ -52,7 +59,29 @@
 
     b) document.querySelector('#title')   -> return <h1 id="title" class="heading">DOM learning on Chai aur Code <span style="display: none;">test text</span></h1>
     
-    c) document.querySelector('.heading')
+    c) document.querySelector('.heading')         // . method is for Class name
+
+    d) const mul = document.querySelector('ul')      // For one unordered list
+       const turnGreen = mul.querySelector('li')
+       turnGreen.style.backgroundColor = "green"
+
+    e) const tmplist = document.querySelectorAll('li')           // For all unordered list-> NodeList
+       tmplist[0].style.color = "green"    // Do green color to first list in unordered list
+
+       // ForEach loop for tmpList ::>
+       tmplist.forEach((l)=>{
+        l.style.backgroundColor = "red";
+       })
+
+       const myH1 = document.querySelectorAll('h1')     // Store all <h1>
+       myH1[0].style.color = "blue"
+
+    5) document.getElementByClassName("list-item")    -> HTML-Collection
+       // HTML-Collection convert into Array
+       const myConvertedArray = Array.from(tmplist)
+       myConvertedArray.forEach((li)=>{
+        li.style.color = "orange";
+       })
 
 
  -->
