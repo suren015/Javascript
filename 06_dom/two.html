@@ -1,0 +1,80 @@
+<html lang="en">
+
+<!-- Head of the Document -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Document Object Model</title>
+</head>
+
+<!-- Body of the Document -->
+
+<body style="background-color: #212122; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+
+<!-- From this we have Javascript Part -->
+
+<script>
+    // class is written by '.'
+     const parent = document.querySelector(".parent")
+     console.log(parent);  // Return all div in parent class
+
+
+     // Parent to Children
+
+     console.log(parent.children);   // HTML-Collection ...... Almost array like property
+
+     console.log(parent.children[1]);   // Return div of tuesday
+
+     console.log(parent.children[0].innerHTML);   // Return Monday
+
+     // Basic For loop Run for Array like structures but other loop like forEach, firstly we convert these HTML-Collection into Array by "Array.from(HTML-Collection)" method
+
+     for (let index = 0; index < parent.children.length; index++) {
+       console.log(parent.children[index].innerHTML);
+     }
+
+     parent.children[1].style.color = "orange"  // Change the color of tuesday into Orange
+
+
+     console.log(parent.firstElementChild);  // Return full div of "Monday" Child
+
+     console.log(parent.lastElementChild);   // Return full div of "Thursday" Child
+
+
+     // class is written by '.'
+     const day1 = document.querySelector('.day')
+     console.log(day1);  // Return div of "Monday"
+
+     
+
+     // Children to parent
+     console.log(day1.parentElement);   // Return whole div of parent
+
+     // For Siblings like Monday->Tueday, Tuesday->Wednesday, Wednesday->Thursday
+
+    console.log(day1.nextElementSibling);   // Return whole div of "Tuesday"
+
+    console.log("NODES: ", parent.childNodes);  // Not Monday, Tuesday.....Its a complex tree like structure in which we have ::  
+            /*  0: text     -> For enter to next line
+                1: div.day    -> div section of Monday
+                2: text      -> For enter to next line
+                3: div.day    -> div section of Tuesday
+                4: text
+                5: div.day
+                6: text
+                7: div.day
+                8: text    */
+
+</script>
+
+
+</html>
