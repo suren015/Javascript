@@ -3,15 +3,32 @@ const buttons = document.querySelectorAll('.button');
 // console.log(buttons);
 
 
-// Selecting the body
+// // Selecting the body
 const body = document.querySelector('body');
 
-buttons.forEach((button)=>{
-    // console.log(button);
+buttons.forEach(function(button){
+    console.log(button);
 
     // Event Listener on each buttons
     button.addEventListener('click', function(e){
         console.log(e);
         console.log(e.target);
+
+        if(e.target.id === 'grey'){
+            body.style.backgroundColor = 'grey';
+        }
+        if(e.target.id === 'white'){
+            body.style.backgroundColor = 'white';
+        }
+        if(e.target.id === 'blue'){
+            body.style.backgroundColor = 'blue';
+        }
+        if(e.target.id === 'yellow'){
+            body.style.backgroundColor = 'yellow';
+        }
+        if(e.target.id === 'purple'){
+            body.style.backgroundColor = e.target.id;
+        }
     });
 })
+

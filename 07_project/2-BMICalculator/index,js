@@ -1,0 +1,19 @@
+// Selecting the form so that we can calculate BMI by clicking on Calcuate Button
+
+const form = document.querySelector('form');
+
+
+// For calculating BMI ::>
+form.addEventListener('submit',function(e){
+    e.preventDefault();
+
+    // Selecting the value of height and weight
+    const h = parseInt(document.querySelector('#height').value);  // By converting them into int from string
+    const w = parseInt(document.querySelector('#weight').value);
+
+    const results = document.querySelector('#results');
+    if(h==='' || h<0 || isNaN(h)){
+        results.innerHTML = 'Please give a valid height'
+    }
+
+});
