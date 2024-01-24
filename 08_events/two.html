@@ -22,10 +22,28 @@
     }, timeout);
 */
     // This mehod executes after 2 second as we have given timeout = 2000 ms
-    setTimeout(() => {
-        console.log('Surendra');
-    }, 2000);
+    // setTimeout(() => {
+    //     console.log('Surendra');
+    // }, 2000);
 
+
+    const saySuren = function(){
+        console.log('Suren');
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = 'Best JS series';
+    }
+
+
+
+    const changeMe = setTimeout(changeText,2000);     // After what time the function will execute
+
+    // clearTimeout(changeMe);   for clearing the setTimeout function 
+
+    document.querySelector('#stop').addEventListener('click',(e)=>{
+        clearTimeout(changeMe);
+        console.log('STOPPED');
+    })
     
 </script>
 

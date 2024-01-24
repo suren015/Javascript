@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript do in 15 days</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const NamewithDate = ()=>{
+console.log('Suren', Date.now());
+    };
+
+       // Function run after each second
+
+    //to stop this interval
+    // clearInterval(intervalId); // to stop manually we use this but if we want to stop byu button then we use another method like event listener type
+
+    let intervalId;
+    document.querySelector('#start').addEventListener('click', (e)=>{
+        intervalId = setInterval(NamewithDate,1000);
+    })
+
+    document.querySelector('#stop').addEventListener('click', (e)=>{
+        clearInterval(intervalId);
+        console.log("STOPPED");
+    })
+
+    
+
+</script>
+</html>
