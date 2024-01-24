@@ -6,5 +6,17 @@ Javascript ->    (1) Synchronous       -> The JavaScript engine executes our pro
 Execution Context -> 
                 (1) Execute one line of code at each time
                 (2) Console log->1
-                (3) Console.log->2
+                (3) Console log->2
+
+                Each operation waits for the last one to complete before executing
+
+
+Blocking Code vs Non-Blocking Code::>
+ 
+
+Blocking Code-> Block the flow of Program --> Read File Sync
+Non-Blocking Code-> Does not block execution --> Read File ASYNC
                 
+
+
+JS asynchronous language h but uska default behaviour synchronous hota h. Us behavior ko hame forcefully bta kr async bnana pdta h. Sbse easy example h aapke settimeout or setinterval methods
